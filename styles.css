@@ -1,0 +1,90 @@
+/* styles.css */
+:root{
+  --lila-claro: #f1e9ff;
+  --morado: #6b2fa3;
+  --texto: #333;
+}
+
+/* Estilos globales */
+* { box-sizing: border-box; }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: var(--texto);
+  line-height: 1.4;
+  padding: 20px;
+}
+
+/* Header y footer */
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Estilos para cada section (según la imagen de la práctica) */
+section {
+  background-color: white;
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Encabezados de sección */
+section h2 {
+  margin-top: 0;
+}
+
+/* Resaltar texto con span */
+.resaltar {
+  background-color: var(--lila-claro);
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+  color: var(--morado);
+  font-weight: 600;
+}
+
+/* Navegación */
+.mi-nav {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.mi-nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  gap: 1rem;
+}
+.mi-nav a {
+  text-decoration: none;
+  color: var(--morado);
+  font-weight: 600;
+}
+
+/* Controles de mensaje (botones) */
+.controles-mensaje {
+  text-align: center;
+  margin: 1rem 0;
+}
+.controles-mensaje button {
+  margin: 0 .25rem;
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Responsive simple */
+@media (max-width: 600px) {
+  .contenedor { padding: 6px; }
+}

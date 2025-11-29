@@ -1,1 +1,63 @@
 etiquetas
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laboratorio sesión 15</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Laboratorio sesión 15</h1>
+  </header>
+
+  <!-- Contenedor principal -->
+  <div id="contenedor-principal" class="contenedor">
+    <!-- 3 secciones con <section> -->
+    <section id="seccion1" data-nombre="Sección 1">
+      <h2>Sección 1</h2>
+      <p>Este es el contenido de la sección 1. Aquí puedes poner un párrafo introductorio.</p>
+    </section>
+
+    <section id="seccion2" data-nombre="Sección 2">
+      <h2>Sección 2</h2>
+      <p>Este es el contenido de la sección 2. En este párrafo vamos a <span class="resaltar">resaltar</span> una parte con &lt;span&gt;.</p>
+    </section>
+
+    <section id="seccion3" data-nombre="Sección 3">
+      <h2>Sección 3</h2>
+      <p>Este es el contenido de la sección 3. Contiene un artículo independiente y navegación abajo.</p>
+
+      <!-- Artículo independiente -->
+      <article id="articulo-ejemplo">
+        <h3>Artículo: Ejemplo independiente</h3>
+        <p>Este artículo está dentro de la sección 3 y es independiente del resto.</p>
+        <p>Parte del texto <span class="resaltar">resaltada</span> usando &lt;span&gt;.</p>
+      </article>
+    </section>
+  </div>
+
+  <!-- Barra de navegación (puede estar en cualquier parte de la página) -->
+  <nav class="mi-nav">
+    <ul>
+      <li><a href="#seccion1">Ir a Sección 1</a></li>
+      <li><a href="#seccion2">Ir a Sección 2</a></li>
+      <li><a href="#seccion3">Ir a Sección 3</a></li>
+    </ul>
+  </nav>
+
+  <!-- Botones para mostrar mensajes desde cada sesión (ejercicio JS) -->
+  <div class="controles-mensaje">
+    <button onclick="mostrarMensaje('Sección 1')">Mostrar mensaje Sesión 1</button>
+    <button onclick="mostrarMensaje('Sección 2')">Mostrar mensaje Sesión 2</button>
+    <button onclick="mostrarMensaje('Sección 3')">Mostrar mensaje Sesión 3</button>
+  </div>
+
+  <footer>
+    <p>Universidad - TIC • eTraining</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
